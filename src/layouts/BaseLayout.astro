@@ -1,0 +1,16 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <BaseHead {title} />
+  <body>
+    <SiteHeader />
+    <slot />
+    <SiteFooter />
+  </body>
+</html>

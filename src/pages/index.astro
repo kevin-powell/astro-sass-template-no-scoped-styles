@@ -1,16 +1,29 @@
 ---
-
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import Layout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Let's get to work">
+  <div class="container flow">
+    <h1 class="heading-1">Let's go</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum nulla
+      repellendus dolore quam quas? Nisi eaque veniam dolorem enim. Odit
+      incidunt nisi dignissimos facilis perspiciatis quidem accusantium at
+      consectetur minus.
+    </p>
+    <p>
+      Aperiam non nulla recusandae totam atque officia debitis tenetur, natus
+      veritatis eius perferendis libero earum voluptatum doloremque dignissimos,
+      ut laborum illum eligendi autem ipsa quaerat. Dolorum consequatur ipsum
+      harum ut.
+    </p>
+    <p>
+      Dolore molestias et esse neque beatae atque. Quas necessitatibus,
+      quibusdam est vero neque corporis doloremque consectetur error, dicta
+      animi commodi! Accusamus distinctio dolor eligendi sint repudiandae
+      sapiente adipisci nemo doloribus?
+    </p>
+  </div>
+</Layout>

@@ -1,0 +1,29 @@
+@use "../abstracts/" as *;
+
+.skip-navigation {
+  position: absolute;
+  transform: translateY(-100%);
+  inset: 0 0 auto 0;
+  width: fit-content;
+
+  color: $skip-nav-color;
+  background-color: $skip-nav-background-color;
+  padding: $skip-nav-padding;
+
+  @if ($skip-nav-position == "center") {
+    margin-inline: auto;
+  } @else if ($skip-nav-position == "right") {
+    margin-inline-start: auto;
+    margin-inline-end: 1rem;
+  } @else {
+    margin-inline-start: 1rem;
+  }
+
+  &:focus {
+    color: $skip-nav-color;
+    background-color: $skip-nav-background-color;
+    transform: translateY(0);
+    outline: $skip-nav-outline-color $skip-nav-outline-size solid;
+    outline-offset: $skip-nav-outline-offset;
+  }
+}
